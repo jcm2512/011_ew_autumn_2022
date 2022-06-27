@@ -1,9 +1,11 @@
 <script>
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
 </script>
 
 <main>
-  <div id="header">Header</div>
-  <div id="footer">Footer</div>
+  <div id="header">Top</div>
+  <div id="footer">Bottom</div>
 </main>
 
 <style>
