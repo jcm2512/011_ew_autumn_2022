@@ -3,15 +3,14 @@
 
 html, body {
 	position: relative;
-	width: 100vw;
-	height: 100vh;
+	/* width: 100vw;
+	height: 100vh; */
 }
 
 body {
-	min-height: 100vh;
-	min-width: 100vw;
-	min-height: -webkit-fill-available;
-  }
+	height: 100vh; /* fallback for browsers that do not support Custom Properties */
+	height: calc(var(--vh, 1vh) * 100);  
+}
   html {
 	height: -webkit-fill-available;
   }
